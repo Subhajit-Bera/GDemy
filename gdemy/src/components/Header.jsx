@@ -8,8 +8,8 @@ import {
     DrawerCloseButton,
     Button,
     useDisclosure,
-    VStack,
-    HStack,
+    VStack,   //flex direction is vertical
+    HStack,  //flex direction is horizontal
 } from '@chakra-ui/react';
 import { Link } from 'react-router-dom';
 import { BiMenuAltLeft } from 'react-icons/bi';
@@ -21,27 +21,27 @@ const Header = () => {
             <Button
                 zIndex={'overlay'}
                 pos={'fixed'}
-                top={'4'}
-                left={'4'}
+                top={'4'}  //4 unit margin from top
+                left={'4'} //4 unit margin from left
                 colorScheme="red"
-                p={'0'}
-                w={'10'}
-                h={'10'}
+                p={'0'}   //padding
+                w={'10'}  //width
+                h={'10'}  //height
                 borderRadius={'full'}
                 onClick={onOpen}
             >
                 <BiMenuAltLeft size={'20'} />
             </Button>
-            <Drawer isOpen={isOpen} placement="left" onClose={onClose}>
+            <Drawer isOpen={isOpen} placement="left" onClose={onClose}>  
                 <DrawerOverlay />
 
                 <DrawerContent>
                     <DrawerCloseButton />
-                    <DrawerHeader color="red" letterSpacing={8} fontSize={25} >gDemy</DrawerHeader>
+                    <DrawerHeader color="red" letterSpacing={8} fontSize={25} >gDEMY</DrawerHeader>
                     <DrawerBody>
                         <VStack alignItems={'flex-start'}>
                             <Button
-                                onClick={onClose}
+                                onClick={onClose}    //onclick={onClose} ->when we click a button drawer wil close. 
                                 // variant={'ghost'}
                                 colorScheme={'red'}
                             >

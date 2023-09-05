@@ -8,7 +8,7 @@ import img3 from '../assets/3.jpg';
 import img4 from '../assets/4.jpg';
 import img5 from '../assets/5.png';
 
-const headingOptions = {
+const headingOptions = { //Custom style object ,which is used as spread operator below
     pos: 'absolute',
     left: '50%',
     top: '50%',
@@ -38,10 +38,11 @@ const Home = () => {
                 <Stack
                     h="full"
                     p={'4'}
-                    alignItems={'center'}
-                    direction={['column', 'row']}
+                    alignItems={'center'} 
+                    direction={['column', 'row']}  //[for small screen , for big screen] we can manage responsiveness very easily
                 >
-                    <Image src={img5} h={['40', '400']} filter={'hue-rotate(-130deg)'} />
+                    <Image src={img5} h={['40', '400']} filter={'hue-rotate(236deg)'} />
+                    
 
                     <Text
                         letterSpacing={'widest'}
@@ -68,7 +69,7 @@ const MyCarousel = () => (
     >
       <Box w="full" h={'100vh'}>
         <Image src={img1} h="full" w={'full'} objectFit={'cover'} />
-        <Heading bgColor={'blackAlpha.600'} color={'white'} {...headingOptions}>
+        <Heading bgColor={'blackAlpha.600'} color={'white'} {...headingOptions}> 
           zzz
         </Heading>
       </Box>
