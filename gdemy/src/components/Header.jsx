@@ -42,32 +42,32 @@ const Header = () => {
                         <VStack alignItems={'flex-start'}>
                             <Button
                                 onClick={onClose}    //onclick={onClose} ->when we click a button drawer wil close. 
-                                // variant={'ghost'}
-                                colorScheme={'red'}
+                                variant={'ghost'}
+                                color={'red.500'}
                             >
                                 <Link to={'/'}>Home</Link>
                             </Button>
 
                             <Button
                                 onClick={onClose}
-                                // variant={'ghost'}
-                                colorScheme={'red'}
+                                variant={'ghost'}
+                                color={'red.500'}
                             >
                                 <Link to={'/videos'}>Videos</Link>
                             </Button>
 
                             <Button
                                 onClick={onClose}
-                                // variant={'ghost'}
-                                colorScheme={'red'}
+                                variant={'ghost'}
+                                color={'red.500'}
                             >
                                 <Link to={'/videos?category=free'}>Free Videos</Link>
                             </Button>
 
                             <Button
                                 onClick={onClose}
-                                // variant={'ghost'}
-                                colorScheme={'red'}
+                                variant={'ghost'}
+                                color={'red.500'}
                             >
                                 <Link to={'/upload'}>Upload Video</Link>
                             </Button>
