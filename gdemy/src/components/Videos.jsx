@@ -25,7 +25,7 @@ function Videos() {
                     }}
                 ></video>
                 <VStack alignItems={'flex-start'} p={'8'} w={'full'} overflowY={'auto'}>
-                    <Heading>Sample Video 1</Heading>
+                    <Heading color={'red.500'}>Sample Video 1</Heading>
                     <Text>
                         This is a sample video for testing and demo. This is called
                         description.
@@ -42,7 +42,7 @@ function Videos() {
                     <Button
                         variant={'ghost'}
                         colorScheme={'red'}
-                        onClick={() => setVideoSrc(item)}
+                        onClick={() => setVideoSrc(item)} //video changes as the lecture button get clicked
                     >
                         Lecture {index + 1}
                     </Button>
@@ -53,4 +53,4 @@ function Videos() {
     )
 }
 
-export default Videos
+export default Videos;
